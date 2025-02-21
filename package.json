@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "cervereta",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.7",
     "node-telegram-bot-api": "^0.66.0",
     "openai": "^4.85.3"
+  },
+  "engines": {
+    "node": "20.18.3"  # Versión de Node.js (Heroku requiere esto)
   }
 }
