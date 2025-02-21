@@ -10,10 +10,11 @@ const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY; // API Key de DeepSeek
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 const openai = new OpenAI(DEEPSEEK_API_KEY); // Ensure correct configuration
 
+
 // Mensaje de bienvenida
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  bot.sendMessage(chatId, '¡Hola! Soy un bot con inteligencia de DeepSeek. ¿En qué puedo ayudarte?');
+  bot.sendMessage(chatId, '¡Hola! Soy Paquito tu bot con inteligencia de DeepSeek. ¿En qué puedo ayudarte?');
 });
 
 // Escucha SOLO cuando se usa /ask <pregunta>
